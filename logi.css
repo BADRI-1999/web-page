@@ -1,0 +1,116 @@
+.main{
+    margin: 0;
+    padding: 0;
+    background-image: url("glug.jpg");
+    background-repeat: no-repeat;
+    font-family: Cambria, serif;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(189,18,22,0.94);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(181,189,135,0.94);
+    border-radius: 8px;
+}
+.login .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 150px;
+}
+.login h1{
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+.login .i_p{
+    position: relative;
+}
+
+.login .i_p input{
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border:none;
+    border-bottom: 1px solid rgba(88,93,189,0.94);
+    outline: none;
+    background: transparent;
+}
+.login .i_p label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login .i_p input:focus ~ label,
+.login .i_p input:valid ~ label{
+    top:-18px;
+    font-size: 10px;
+}
+.login input[type="submit"]{
+    background: transparent;
+    border: none;
+    left: 50%;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+}
+.login input[type="submit"]:before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    bottom: 0;
+    left: 0;
+}
+.login input[type="submit"]:after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+.login input[type="submit"]:hover:before {
+    height: 100px;
+    width: 320px;
+    border: 8px solid white;
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.5s linear,
+                width 0.5s linear 0.5s;
+}
+.login input[type="submit"]:hover:after {
+    height: 100px;
+    width: 320px;
+    border: 8px solid white;
+    border-left: none;
+    border-top: none;
+    transition: height 0.5s linear,
+    width 0.5s linear 0.5s;
+}
+
+
+
+
+
+
